@@ -1,0 +1,69 @@
+{
+  "name": "luna",
+  "workspaces": [
+    "packages/*",
+    "templates/*",
+    "templates/vanilla/*"
+  ],
+  "private": true,
+  "version": "3.0.3",
+  "description": "🌘Luna is a React Native and Next.js boilerplate so your app can run on Android, IOS and Web concurrently.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LunatiqueCoder/luna.git"
+  },
+  "author": "Ovidiu Cristescu <cristee95@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LunatiqueCoder/luna/issues"
+  },
+  "homepage": "https://github.com/LunatiqueCoder/luna",
+  "keywords": [
+    "react",
+    "native",
+    "boilerplate",
+    "template",
+    "luna",
+    "react-native",
+    "web",
+    "react-native-web",
+    "next",
+    "nextjs",
+    "solito",
+    "tamagui"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@release-it-plugins/workspaces": "^3.2.0",
+    "@release-it/bumper": "^4.0.2",
+    "release-it": "^15.6.0",
+    "turbo": "^1.8.8"
+  },
+  "release-it": {
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": false,
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it-plugins/workspaces": {
+        "distTag": "latest"
+      },
+      "@release-it/bumper": {
+        "in": "package.json",
+        "out": "package.json"
+      }
+    }
+  }
+}

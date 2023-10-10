@@ -1,0 +1,29 @@
+{
+  "name": "@criszz77/luna",
+  "version": "3.0.3",
+  "description": "🌘Luna is a React Native and Next.js boilerplate so your app can run on Android, IOS and Web concurrently.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LunatiqueCoder/luna.git"
+  },
+  "author": "Ovidiu Cristescu <cristee95@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LunatiqueCoder/luna/issues"
+  },
+  "homepage": "https://github.com/LunatiqueCoder/luna/tree/master/templates/vanilla/template",
+  "keywords": [
+    "react",
+    "native",
+    "boilerplate",
+    "template",
+    "luna",
+    "react-native",
+    "web",
+    "react-native-web",
+    "next",
+    "nextjs",
+    "solito",
+    "tamagui"
+  ]
+}
